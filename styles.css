@@ -6,17 +6,17 @@
 
 /* ─── Tokens de color ───────────────────────── */
 :root {
-  --carbon:        #1C1A17;
-  --crema:         #F2E9D8;
-  --mostaza:       #E0A02E;
-  --tomate:        #C23B22;
-  --verde-abierto: #3C8C5A;
-  --rojo-cerrado:  #C23B22;
-  --humo:          #8A8174;
-  --humo-oscuro:   #3A3730;
+  --carbon:        #000000;
+  --crema:         #FFFFFF;
+  --mostaza:       #E91E8C;
+  --tomate:        #E91E8C;
+  --verde-abierto: #22C55E;
+  --rojo-cerrado:  #EF4444;
+  --humo:          #888888;
+  --humo-oscuro:   #111111;
 
   /* Tipografía */
-  --font-display: 'Anton', Impact, sans-serif;
+  --font-display: 'Bebas Neue', Impact, sans-serif;
   --font-body:    'Inter', system-ui, sans-serif;
   --font-accent:  'Caveat', cursive;
 
@@ -78,7 +78,7 @@ address { font-style: normal; }
   position: absolute;
   top: -100%;
   left: 1rem;
-  background: var(--tomate);
+  background: var(--mostaza);
   color: var(--crema);
   padding: 0.75rem 1.25rem;
   font-family: var(--font-body);
@@ -286,7 +286,7 @@ address { font-style: normal; }
   top: 0; right: -20%;
   width: 60%;
   height: 100%;
-  background: linear-gradient(135deg, transparent 70%, rgba(224,160,46,0.05) 100%);
+  background: linear-gradient(135deg, transparent 70%, rgba(233,30,140,0.08) 100%);
   pointer-events: none;
 }
 
@@ -294,11 +294,14 @@ address { font-style: normal; }
   flex: 1;
   display: flex;
   align-items: center;
+  justify-content: center;
   padding: var(--space-xl) var(--space-m) var(--space-l);
 }
 
 .hero-content {
   max-width: 720px;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .hero-pre {
@@ -346,6 +349,7 @@ address { font-style: normal; }
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
   gap: 0.5rem 0.75rem;
   font-size: 0.875rem;
   color: var(--humo);
@@ -374,6 +378,7 @@ address { font-style: normal; }
 .hero-cta-group {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: var(--space-s);
 }
 
@@ -555,8 +560,9 @@ address { font-style: normal; }
 
 /* ─── RESEÑAS ───────────────────────────────── */
 .resenas {
-  background-color: var(--crema);
+  background-color: var(--humo-oscuro);
   padding: var(--space-xxl) 0;
+  border-top: 1px solid #1E1E1E;
 }
 
 .resenas .section-header { text-align: center; }
@@ -573,7 +579,7 @@ address { font-style: normal; }
 .resenas-rating {
   font-family: var(--font-display);
   font-size: clamp(1.8rem, 5vw, 2.8rem);
-  color: var(--carbon);
+  color: var(--crema);
   text-transform: uppercase;
   line-height: 1;
 }
@@ -601,7 +607,7 @@ address { font-style: normal; }
 }
 
 .resena-card {
-  background-color: #fff;
+  background-color: #1A1A1A;
   border-radius: var(--radius);
   padding: var(--space-m);
   display: flex;
@@ -612,7 +618,7 @@ address { font-style: normal; }
 }
 .resena-texto {
   font-size: 0.95rem;
-  color: var(--carbon);
+  color: var(--crema);
   line-height: 1.6;
   flex: 1;
 }
@@ -728,8 +734,9 @@ address { font-style: normal; }
 
 /* ─── CÓMO PEDIR ────────────────────────────── */
 .como-pedir {
-  background-color: var(--crema);
+  background-color: var(--carbon);
   padding: var(--space-xxl) 0;
+  border-top: 1px solid #1E1E1E;
 }
 
 .pedir-inner {
@@ -742,11 +749,11 @@ address { font-style: normal; }
   gap: var(--space-m);
 }
 
-.como-pedir .section-title-display { color: var(--carbon); }
+.como-pedir .section-title-display { color: var(--crema); }
 
 .pedir-desc {
   font-size: 1.05rem;
-  color: var(--humo);
+  color: #AAAAAA;
   line-height: 1.7;
 }
 
